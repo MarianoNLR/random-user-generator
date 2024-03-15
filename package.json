@@ -3,10 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "standard-version",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch ./server/app.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3",
+    "standard-version": "^9.5.0"
+  },
+  "devDependencies": {
+    "standard": "^17.1.0"
+  }
 }
