@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Random User Generator</title>
+
+  <script type="module">
+    fetch('localhost:3000/')
+    .then(res => res.json())
+    .then(users => {
+      return `<h1>${users}</h1>`
+    })
+
+    docuemnt.querySelector('main').innerHTML = html
+  </script>
 </head>
 <body>
   <h1>Random User Generator</h1>
